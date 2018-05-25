@@ -52,7 +52,7 @@ public class VerifyCommand implements CommandExecutor {
         // Todo: Actually specify the error, please..
         catch (Exception err) {
             Bukkit.getServer().getConsoleSender().sendMessage("Ambiguous Error: " + err);
-            sender.sendMessage("User does not exist..");
+            sender.sendMessage("You are not added to the list.");
         }
 
         return true;
