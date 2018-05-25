@@ -1,10 +1,9 @@
 package io.gitlab.brecert.verifyplugin;
 
+import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
-import org.bukkit.configuration.file.FileConfiguration;
-import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
 
 
@@ -52,6 +51,7 @@ public class VerifyCommand implements CommandExecutor {
         }
         // Todo: Actually specify the error, please..
         catch (Exception err) {
+            Bukkit.getServer().getConsoleSender().sendMessage("Ambiguous Error: " + err);
             sender.sendMessage("User does not exist..");
         }
 
