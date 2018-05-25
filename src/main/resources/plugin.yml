@@ -1,3 +1,9 @@
 name: Verify Plugin
 version: ${project.version}
 main: io.gitlab.brecert.verifyplugin.VerifyPlugin
+
+commands:
+    verify:
+        description: Verify yourself.
+        permission: spigotplugin.verify
+        usage: /<command> code
