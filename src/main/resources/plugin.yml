@@ -1,4 +1,4 @@
-name: Verify Plugin
+name: VerifyPlugin
 version: ${project.version}
 main: io.gitlab.brecert.verifyplugin.VerifyPlugin
 
