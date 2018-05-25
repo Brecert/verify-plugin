@@ -1,4 +1,4 @@
-name: Verify Plugin
+name: VerifyPlugin
 version: 1.0-SNAPSHOT
 main: io.gitlab.brecert.verifyplugin.VerifyPlugin
 
